@@ -32,9 +32,9 @@ export function CTABanner() {
 
           {/* Right Content - Image Placeholder */}
           <div className="relative">
-            <div className="aspect-video bg-white/10 rounded-2xl flex items-center justify-center">
+            <div className="aspect-video bg-white/10 flex items-center justify-center">
               <div className="text-center space-y-2">
-                <div className="w-16 h-16 bg-white/20 rounded-xl mx-auto"></div>
+                <div className="w-16 h-16 bg-white/20 mx-auto"></div>
                 <p className="text-white/70">Team Collaboration</p>
               </div>
             </div>

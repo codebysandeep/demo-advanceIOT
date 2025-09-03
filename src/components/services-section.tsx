@@ -91,6 +91,8 @@ export function ServicesSection() {
               className="block group"
             >
               <Card className="group hover:shadow-lg transition-all duration-300 border-border bg-black text-white h-full relative overflow-hidden">
+
+
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
                   style={{
@@ -115,7 +117,7 @@ export function ServicesSection() {
                           key={bulletIndex}
                           className="flex items-start gap-2 text-sm text-white/90 group-hover:text-white transition-colors duration-300"
                         >
-                          <div className="w-1.5 h-1.5 bg-advance-secondary rounded-full mt-2 flex-shrink-0" />
+                          <div className="w-1.5 h-1.5 bg-advance-secondary mt-2 flex-shrink-0" />
                           <span>{bullet}</span>
                         </li>
                       ))}

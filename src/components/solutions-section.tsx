@@ -100,10 +100,10 @@ export function SolutionsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {solutions.map((solution, index) => (
             <a key={index} href="#" className="group block">
-              <Card className="relative overflow-hidden transition-all duration-500 border-border cursor-pointer h-full min-h-[280px] hover:shadow-lg">
+              <Card className="group hover:shadow-lg transition-all duration-300 border-border">
                 <div className="absolute inset-0 z-10 bg-advance-primary" />
 
                 <div
@@ -134,7 +134,7 @@ export function SolutionsSection() {
                     <ul className="space-y-2 text-sm text-gray-300">
                       {solution.bulletPoints.map((point, pointIndex) => (
                         <li key={pointIndex} className="flex items-start">
-                          <span className="w-1.5 h-1.5 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span className="w-1.5 h-1.5 bg-white mt-2 mr-3 flex-shrink-0"></span>
                           <span className="text-pretty">{point}</span>
                         </li>
                       ))}
