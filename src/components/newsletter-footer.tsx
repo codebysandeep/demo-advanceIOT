@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { User } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const footerLinks = {
   Company: ["About Us", "Careers", "News & Updates", "Contact"],
@@ -26,15 +27,43 @@ const footerLinks = {
 };
 
 export function NewsletterFooter() {
+  const parallaxRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (parallaxRef.current) {
+        const scrolled = window.pageYOffset;
+        const element = parallaxRef.current;
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top + scrolled;
+        const elementHeight = rect.height;
+        const windowHeight = window.innerHeight;
+
+        // Only apply parallax if element is in viewport
+        if (scrolled + windowHeight > elementTop && scrolled < elementTop + elementHeight) {
+          const yPos = -(scrolled - elementTop) * 0.3;
+          element.style.backgroundPosition = `center ${yPos}px`;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <footer
-      className="bg-background border-t border-border"
-      style={{
-        backgroundImage: "url('src/assets/banner-7.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <footer className="bg-background border-t border-border">
+      {/* Newsletter Section with Parallax */}
+      <div
+        ref={parallaxRef}
+        className="relative overflow-hidden"
+        style={{
+          backgroundImage: "url('src/assets/banner-7.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
       {/* Newsletter Section */}
       <div className="py-16 px-4">
         <div className="container mx-auto">
@@ -60,11 +89,12 @@ export function NewsletterFooter() {
           </div>
         </div>
       </div>
+      </div>
 
       <Separator />
 
       {/* Footer Links */}
-      <div className="py-16 px-4 color bg-white">
+      <div className="py-16 px-4 bg-background">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
@@ -103,7 +133,7 @@ export function NewsletterFooter() {
       <Separator />
 
       {/* Copyright */}
-      <div className="py-6 px-4 bg-white">
+      <div className="py-6 px-4 bg-background">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">

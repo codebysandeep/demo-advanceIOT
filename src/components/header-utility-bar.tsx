@@ -70,7 +70,7 @@ export function HeaderUtilityBar() {
             <ChevronDown className="h-3 w-3" />
           </button>
           {isDropdownOpen && (
-            <div className="absolute right-0 top-full mt-1 bg-white text-black rounded-md shadow-lg z-[9999] min-w-[140px]">
+            <div className="absolute right-0 top-full mt-1 bg-background text-foreground border border-border rounded-md shadow-lg z-[9999] min-w-[140px]">
               {languages.map((language) => (
                 <button
                   key={language.code}

@@ -1,14 +1,41 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export function CTABanner() {
+  const parallaxRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (parallaxRef.current) {
+        const scrolled = window.pageYOffset;
+        const element = parallaxRef.current;
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top + scrolled;
+        const elementHeight = rect.height;
+        const windowHeight = window.innerHeight;
+
+        // Only apply parallax if element is in viewport
+        if (scrolled + windowHeight > elementTop && scrolled < elementTop + elementHeight) {
+          const yPos = -(scrolled - elementTop) * 0.5;
+          element.style.backgroundPosition = `center ${yPos}px`;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section
-      className="py-20 px-4 bg-advance-primary text-white"
+      ref={parallaxRef}
+      className="py-20 px-4 bg-advance-primary text-white relative overflow-hidden"
       style={{
         backgroundImage: "url('src/assets/banner-4.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
       <div className="container mx-auto">

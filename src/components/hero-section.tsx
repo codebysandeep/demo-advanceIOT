@@ -1,8 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Star } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export function HeroSection() {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  
+  const rotatingTexts = [
+    "smart IOT",
+    "AI & ML",
+    "blockchain",
+    "cloud solutions",
+    "digital transformation",
+    "emerging technologies"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      
+      setTimeout(() => {
+        setCurrentTextIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
+        setIsAnimating(false);
+      }, 250); // Half of the animation duration
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [rotatingTexts.length]);
+
   return (
     <section className="py-20 px-4 bg-background">
       <div className="container mx-auto">
@@ -12,8 +38,17 @@ export function HeroSection() {
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold text-balance">
                 Transform your business with{" "}
-                <span className="text-advance-primary underline decoration-advance-secondary decoration-4">
-                  smart IOT
+                <span className="relative inline-block">
+                  <span 
+                    className={`text-advance-primary underline decoration-advance-secondary decoration-4 transition-all duration-500 ease-in-out ${
+                      isAnimating 
+                        ? 'opacity-0 transform -translate-y-2 scale-95' 
+                        : 'opacity-100 transform translate-y-0 scale-100'
+                    }`}
+                    style={{ display: 'inline-block', minWidth: '200px', textAlign: 'left' }}
+                  >
+                    {rotatingTexts[currentTextIndex]}
+                  </span>
                 </span>{" "}
                 solutions
               </h1>

@@ -50,6 +50,11 @@
   --border: 215 27% 17%;
   --input: 215 27% 17%;
   --ring: 0 0% 51%;
+  
+  /* Custom Advance IOT brand colors for dark mode */
+  --advance-primary: #3b82f6;
+  --advance-secondary: #fbbf24;
+  --advance-neutral: #9ca3af;
 }
 
 
