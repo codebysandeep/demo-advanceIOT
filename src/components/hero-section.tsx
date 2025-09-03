@@ -75,13 +75,13 @@ export function HeroSection() {
 
           {/* Right Content - 3D Illustration Placeholder */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-advance-primary/10 to-advance-secondary/10 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="w-32 h-32 bg-advance-primary/20 mx-auto flex items-center justify-center">
-                  <div className="w-16 h-16 bg-advance-primary"></div>
-                </div>
-                <p className="text-muted-foreground">IoT Dashboard Preview</p>
-              </div>
+            <div className="aspect-square bg-gradient-to-br from-advance-primary/10 to-advance-secondary/10 flex items-center justify-center" 
+                style={{
+                  backgroundImage: "url('src/assets/banner-3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}>
+              
             </div>
           </div>
         </div>

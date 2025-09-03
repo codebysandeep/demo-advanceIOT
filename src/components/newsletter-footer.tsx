@@ -16,13 +16,18 @@ const footerLinks = {
 
 export function NewsletterFooter() {
   return (
-    <footer className="bg-background border-t border-border">
+    <footer className="bg-background border-t border-border" style={{
+        backgroundImage: "url('src/assets/banner-7.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       {/* Newsletter Section */}
       <div className="py-16 px-4">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="space-y-2 text-center lg:text-left">
-              <h3 className="text-2xl font-bold text-balance">
+              <h3 className="text-2xl font-bold text-balance text-white">
                 Join our newsletter to keep up to date with us!
               </h3>
             </div>
@@ -46,7 +51,7 @@ export function NewsletterFooter() {
       <Separator />
 
       {/* Footer Links */}
-      <div className="py-16 px-4">
+      <div className="py-16 px-4 color bg-white">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
@@ -85,7 +90,7 @@ export function NewsletterFooter() {
       <Separator />
 
       {/* Copyright */}
-      <div className="py-6 px-4">
+      <div className="py-6 px-4 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">

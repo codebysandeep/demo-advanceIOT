@@ -99,7 +99,7 @@ export function ServicesSection() {
                     background: "linear-gradient(145deg, #00509d, #fdc500)",
                   }}
                 />
-                <CardContent className="p-6 space-y-6 flex flex-col h-full relative z-10">
+                <CardContent className="p-12 space-y-6 flex flex-col h-full relative z-10">
                   <div className="flex justify-start">
                     <service.icon className="h-8 w-8 text-white stroke-1 transition-colors duration-300" />
                   </div>

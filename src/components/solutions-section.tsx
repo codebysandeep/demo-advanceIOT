@@ -114,7 +114,7 @@ export function SolutionsSection() {
                   }}
                 />
 
-                <CardContent className="relative z-30 p-6 flex flex-col h-full">
+                <CardContent className="relative z-30 p-12 flex flex-col h-full">
                   <div className="flex justify-start mb-6">
                     <div className="w-8 h-8 flex items-center justify-center">
                       <solution.icon
