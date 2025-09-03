@@ -57,7 +57,7 @@ export function NewsletterFooter() {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="text-2xl font-bold text-advance-primary">
-                Advance IOT
+                Advance IOT Technical Solutions LLC-SPC 
               </div>
               <p className="text-muted-foreground text-pretty">
                 Transforming businesses with innovative IoT solutions and expert
@@ -94,7 +94,7 @@ export function NewsletterFooter() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2024 Advance IOT Inc. All rights reserved.
+              © 2025 Advance IOT Technical Solutions LLC-SPC. All rights reserved.
             </div>
             <div className="flex gap-6 text-sm">
               <a
