@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import logo from '../assets/advance-iot-logo.png'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -161,7 +162,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-advance-primary">
-              Advance IOT
+              <a href="#home"> <img src={logo} alt="Advance IOT Technical Solutions LLC-SPC" /> </a>
             </div>
           </div>
 
