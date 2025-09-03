@@ -58,7 +58,7 @@ export function NewsletterFooter() {
         ref={parallaxRef}
         className="relative overflow-hidden"
         style={{
-          backgroundImage: "url('./public/banner-7.jpg')",
+          backgroundImage: "url('/banner-7.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
