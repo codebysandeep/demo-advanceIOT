@@ -103,7 +103,7 @@ export function SolutionsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {solutions.map((solution, index) => (
             <a key={index} href="#" className="group block">
-              <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+              <Card className="relative overflow-hidden transition-all duration-500 border-border cursor-pointer h-full min-h-[280px] hover:shadow-lg">
                 <div className="absolute inset-0 z-10 bg-advance-primary" />
 
                 <div

@@ -64,7 +64,7 @@ export function SuccessStories() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {/* Left column - Single large card */}
-          <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+          <Card className="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm group hover:shadow-lg transition-all duration-300 border-border">
             <CardContent className="p-8 space-y-6 h-full flex flex-col justify-between">
               <div className="space-y-6">
                 <div className="space-y-2">
@@ -112,7 +112,7 @@ export function SuccessStories() {
           {/* Right column - Two rows */}
           <div className="space-y-6">
             {/* First row - Full width card */}
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm group hover:shadow-lg transition-all duration-300 border-border">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <div className="space-y-1">
@@ -158,7 +158,7 @@ export function SuccessStories() {
             {/* Second row - Two columns with cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Left card in second row */}
-              <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+              <Card className="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm group hover:shadow-lg transition-all duration-300 border-border">
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-4">
                     <Quote className="h-5 w-5 text-advance-secondary" />
@@ -193,7 +193,7 @@ export function SuccessStories() {
               </Card>
 
               {/* Right card in second row - Dark themed */}
-              <Card className="group hover:shadow-lg transition-all duration-300 bg-foreground text-background border-foreground">
+              <Card className="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm group hover:shadow-lg transition-all duration-300 bg-foreground text-background border-foreground">
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-4">
                     <Quote className="h-5 w-5 text-advance-secondary" />
