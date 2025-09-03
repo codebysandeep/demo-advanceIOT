@@ -32,7 +32,7 @@ export function CTABanner() {
       ref={parallaxRef}
       className="py-20 px-4 bg-advance-primary text-white relative overflow-hidden"
       style={{
-        backgroundImage: "url('public/banner-4.jpg')",
+        backgroundImage: "url('./public/banner-4.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
