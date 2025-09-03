@@ -10,7 +10,7 @@ const testimonials = [
       "We needed a modern, high-performing IoT solution, and the Advance IOT team delivered beyond expectations. Their expertise helped us increase operational efficiency by 800% in just two weeks. Highly recommend!",
     author: "David Callahan",
     role: "Operations Director, TechCorp",
-    avatar: "src/assets/professional-man.png",
+    avatar: "public/professional-man.png",
     size: "large", // Added size property for grid layout
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
       "From planning to implementation, every detail was meticulously handled. The team's expertise helped us achieve faster data processing, and the results have been phenomenal!",
     author: "Sarah Mitchell",
     role: "CTO, DataFlow Solutions",
-    avatar: "src/assets/professional-woman-diverse.png",
+    avatar: "public/professional-woman-diverse.png",
     size: "medium", // Added size property for grid layout
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
       "Their innovative approach took our infrastructure to the next level. The team fully understands enterprise needs and delivered a solution that reduced our system downtime significantly.",
     author: "Tom Becker",
     role: "IT Director, Enterprise Plus",
-    avatar: "src/assets/professional-man-glasses.png",
+    avatar: "public/professional-man-glasses.png",
     size: "medium", // Added size property for grid layout
   },
   {
@@ -40,7 +40,7 @@ const testimonials = [
       "The team nailed our MVP design with a fast turnaround and incredible attention to detail. The final solution felt polished and professional, exceeding our expectations.",
     author: "Lisa Chen",
     role: "Product Manager, InnovateTech",
-    avatar: "src/assets/professional-asian-woman.png",
+    avatar: "public/professional-asian-woman.png",
     size: "dark", // Added size property for dark themed card
   },
 ];

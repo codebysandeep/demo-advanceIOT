@@ -112,7 +112,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-advance-primary/10 to-advance-secondary/10 flex items-center justify-center" 
                 style={{
-                  backgroundImage: "url('src/assets/banner-3.jpg')",
+                  backgroundImage: "url('public/banner-3.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}>
