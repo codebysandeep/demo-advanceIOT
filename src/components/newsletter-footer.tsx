@@ -4,19 +4,32 @@ import { Separator } from "@/components/ui/separator";
 import { User } from "lucide-react";
 
 const footerLinks = {
-  Platform: [
-    "IoT Dashboard",
-    "Device Management",
-    "Analytics Suite",
-    "Security Center",
-  ],
   Company: ["About Us", "Careers", "News & Updates", "Contact"],
-  Resources: ["Documentation", "API Reference", "Case Studies", "White Papers"],
+  Services: [
+    "Digital Experience & Design",
+    "Enterprise Business Solutions",
+    "Emerging Technologies",
+    "Content & Digital Marketing",
+    "Technology Advisory",
+    "Cybersecurity & Risk Management",
+  ],
+  Solution: [
+    "Smart Mobility & Logistics",
+    "AI-Powered Security & Recognition",
+    "Hospitality & Customer Experience",
+    "Enterprise Workforce & Client Solutions",
+    "Healthcare & Life SciencesD",
+    "Education & EdTech",
+    "Financial & Banking Solutions",
+    "Geospatial & Location Intelligence",
+  ],
 };
 
 export function NewsletterFooter() {
   return (
-    <footer className="bg-background border-t border-border" style={{
+    <footer
+      className="bg-background border-t border-border"
+      style={{
         backgroundImage: "url('src/assets/banner-7.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -57,7 +70,7 @@ export function NewsletterFooter() {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="text-2xl font-bold text-advance-primary">
-                Advance IOT Technical Solutions LLC-SPC 
+                Advance IOT Technical Solutions LLC-SPC
               </div>
               <p className="text-muted-foreground text-pretty">
                 Transforming businesses with innovative IoT solutions and expert
@@ -94,7 +107,8 @@ export function NewsletterFooter() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2025 Advance IOT Technical Solutions LLC-SPC. All rights reserved.
+              © 2025 Advance IOT Technical Solutions LLC-SPC. All rights
+              reserved.
             </div>
             <div className="flex gap-6 text-sm">
               <a

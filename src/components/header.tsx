@@ -217,10 +217,10 @@ export function Header() {
             </div>
 
             <a
-              href="#products"
+              href="#about"
               className="text-foreground hover:text-advance-primary transition-colors"
             >
-              Products
+              About
             </a>
             <a
               href="#blog"
