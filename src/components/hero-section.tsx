@@ -55,7 +55,7 @@ export function HeroSection() {
               <p className="text-lg text-muted-foreground text-pretty max-w-2xl">
                 Fast, reliable and innovative - turn your business into a
                 connected ecosystem and streamline your operations with
-                cutting-edge IoT technology.
+                cutting-edge technology.
               </p>
             </div>
 

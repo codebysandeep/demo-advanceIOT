@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { User } from "lucide-react";
+import { User, Mail, Phone, MapPin } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const footerLinks = {
@@ -106,6 +106,37 @@ export function NewsletterFooter() {
                 Transforming businesses with innovative IoT solutions and expert
                 consulting services.
               </p>
+              {/* Contact Info */}
+              <div className="space-y-3 pt-2">
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Mail className="h-4 w-4 text-advance-primary" />
+                  <a 
+                    href="mailto:info@advanceiot.com" 
+                    className="hover:text-advance-primary transition-colors"
+                  >
+                    info@advanceiot.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Phone className="h-4 w-4 text-advance-primary" />
+                  <a 
+                    href="tel:+15551234567" 
+                    className="hover:text-advance-primary transition-colors"
+                  >
+                    +1 (555) 123-4567
+                  </a>
+                </div>
+                <div className="flex items-start gap-3 text-muted-foreground">
+                  <MapPin className="h-4 w-4 text-advance-primary mt-0.5" />
+                  <div className="flex-1">
+                    <address className="not-italic hover:text-advance-primary transition-colors">
+                      123 Business District<br />
+                      Tech City, TC 12345<br />
+                      United States
+                    </address>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Footer Links */}

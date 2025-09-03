@@ -92,10 +92,10 @@ export function SolutionsSection() {
       <div className="container mx-auto">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-balance">
-            Comprehensive IoT Solutions
+            Our Comprehensive Solutions
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            End-to-end IoT solutions designed to accelerate your digital
+            End-to-end solutions designed to accelerate your digital
             transformation and drive business innovation.
           </p>
         </div>
