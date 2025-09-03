@@ -6,7 +6,7 @@ export function CTABanner() {
     <section
       className="py-20 px-4 bg-advance-primary text-white"
       style={{
-        backgroundImage: "url('src/assets/banner-6.jpg')",
+        backgroundImage: "url('src/assets/banner-4.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
